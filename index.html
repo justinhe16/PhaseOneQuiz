@@ -5,6 +5,8 @@
 
 <!-- STYLESHEETS -->
 <link rel="stylesheet" href="./css/normalize.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/font-awesome.min.css">
 <link rel="stylesheet" href="./css/styles.css">
 
 <!-- SCRIPTS -->
@@ -16,14 +18,17 @@
 <body>
 <div id="container">
 
-<h1> Welcome to <code id="bits">1010110110101</code>.</h1>
-
-<form>
-<input type="text" name="name" value="username">
-<input id="continue" type="button" value="Submit">
-</form>
-
-
+<h1> Welcome to <code id="bits2">1010110110101</code>.</h1>
+<div class="col-md-6 col-md-offset-3">
+<h4> Congratulations, human. You have been chosen as a candidate for Hooli's XYZ Department's Space Venture, Neptune5. In order to stay in the candidate pool, you must pass <code id="bits">PhaseOne:Quiz</code>. When you are ready, type your name and begin.</h4>
+</div>
+<div class="col-md-6 col-md-offset-3" id="interface">
+<input type="text" name="name" id="NameProtocol" class="form-control" placeholder="Name">
+<br>
+<a href="http://www.justinhe.com"><button id="website" type="button" class="btn btn-primary btn-lg"><i class="icon-user"></i> My Website (unfinished)</button></a>
+<a href="https://www.github.com/justinhe16/PhaseOneQuiz"><button id="forkme" type="button" class="btn btn-default btn-lg"><i class="icon-github"></i> Github Repo</button></a>
+<button id="continue" type="button" class="btn btn-success btn-lg"><i class="icon-arrow-right"></i> Start Quiz</button>
+</div>
 </div>
 </body>
 </html>
