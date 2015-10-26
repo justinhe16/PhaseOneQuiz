@@ -4,6 +4,7 @@ var soundOn = true; //keeps track of sound toggle
 var imageOn = true; //keeps track of image gif toggle
 var currentAnswers = []; //array for answers
 
+
 $(document).ready(function(){ //when the document is ready, start the process
     if (tracker = -1){  //when you're on the front page ... ,
     animateBits(); //animates first PhaseOne:Quiz
@@ -155,7 +156,7 @@ $("#imagetoggle").click(function() {
         //making HTML
 
         // pie graph making ... rough. made with extensive research on w3schools and dervied from http://wickedlysmart.com/how-to-make-a-pie-chart-with-html5s-canvas/
-        var data = [((grade)/(quiz.questions.length))*360, ((grade - quiz.questions.length)/(quiz.questions.length))*360];
+        var data = [((grade)/(quiz.questions.length))*360, ((quiz.questions.length - grade)/(quiz.questions.length))*360];
         var labels = ["correct","wrong"];
         var colors = ["#33CC33","#CC0000"];
         $("#container").append("<br><br><br><center><canvas id=\"piechart\" width=\"250\" height=\"250\"> This text is displayed if your browser does not support HTML5 Canvas.</canvas><center>");
